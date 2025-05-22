@@ -14,6 +14,9 @@ app.get("/third-route", (req, res) => {
   res.send("Response from third route!");
 });
 
+app.get("/fourth-route", (req, res) => {
+  res.send("Response from fourth route!");
+});
 app.listen(3000);
 
 console.log("Server running on port 3000");

@@ -10,8 +10,8 @@ app.get("/second-route", (req, res) => {
   res.send("Response from second route!");
 });
 
-app.get("/sixth-route", (req, res) => {
-  res.send("Response from sixth route!");
+app.get("/third-route", (req, res) => {
+  res.send("Response from third route!");
 });
 
 app.listen(3000);

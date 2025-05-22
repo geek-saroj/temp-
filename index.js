@@ -1,22 +1,9 @@
 import express from "express";
+import router from "./src/route/route";
 
 const app = express();
 
-app.get("/", (req, res) => {
-  res.send("Hello Babe!");
+app.use("/", router);
+app.listen(3000, () => {
+  console.log("Server is running on port 3000");
 });
-
-app.get("/second-route", (req, res) => {
-  res.send("Response from second route!");
-});
-
-app.get("/third-route", (req, res) => {
-  res.send("Response from third route!");
-});
-
-app.get("/fourth-route", (req, res) => {
-  res.send("Response from fourth route!");
-});
-app.listen(3000);
-
-console.log("Server running on port 3000");
